@@ -8,7 +8,7 @@ Team member: William Johnke
 
 Links:
 
-[Language purpose/genesis](Languages.md)
+[Language purpose/genesis](LanguagePurpose.md)
 
 [Unique features of the language](UniqueFeatures.md)
 
