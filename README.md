@@ -120,6 +120,7 @@ C# has value-types, and also classes represented under structs that operate just
 
 Reference types are handled under the representation of actual classes, which contain references to variables that can be instantiated.
 
+Structs also, essentially, allow for the creation of new value types.
 
 ## Python
 Python doesn't necessarily have either value or reference types. The parameter passing method, and allowing for multiple returned results changes the scope of how Python handles variables. This boils down to Python's representation of mutable vs. immutable objects, since almost everything in Python is an object. This depends on the binding of the name to a value, and whether it is mutable or immutable. If the binding is mutable, then all names in the Python namespace will have the value changed when the mutable variable is changes. Otherwise, the variable cannot be changed.
@@ -136,6 +137,99 @@ foo(answer_list)
 print(answer_list)
 # >> [42]
 ```
+New value types can be created.
+
+
+# Classes
+## C#
+Classes are defined in C# very similarly to java:
+```c#
+public class Customer
+{
+   // Fields, properties, methods and events go here...
+}
+```
+New instances are created the same as well:
+```c#
+Customer object3 = new Customer();
+Customer object4 = object3;
+```
+Constructors will be provided if one is not input in the object, initalizing variables by using values from the Default Values Table
+Otherwise, they can be initialized in the same way as Java, or, if there is only one line of code within the constructor, they can be initialized in a simpler fashion:
+
+```c#
+public class Location
+{
+   private string locationName;
+   
+   public Location(string name) => locationName = name;
+
+   public string Name
+   {
+      get => locationName;
+      set => locationName = value;
+   } 
+}
+```
+When the reference is dereferenced, and set to be cleaned up by the Garbage Collection, **Finalizers** can be called on classes. They are declared as:
+
+```c#
+class Car
+{
+    ~Car()  // destructor
+    {
+        // cleanup statements...
+    }
+}
+```
+
+## Python
+
+Classes in python are defined as following:
+
+```python
+class MyClass:
+    variable = "blah"
+
+    def function(self):
+        print("This is a message inside the class.")
+
+myobjectx = MyClass()
+myobjectx.function()
+```
+Which would print:
+```
+This is a message inside the class.
+```
+
+This shows how MyClass is also instantiated, using a default constructor, and how the function is called on an object instance.
+
+To create a constructor, or an initializer method, one may use the "__init__(self)" keyword, and provide a varying polymorphic set of parameters for the function. On instantiation, whichever arguments are supplied will be used to determine the constructor, and an object will be created and returned.
+
+```python
+class Employee:
+   'Common base class for all employees'
+   empCount = 0
+
+   def __init__(self, name, salary):
+      self.name = name
+      self.salary = salary
+      Employee.empCount += 1
+```
+Destructing an object is handled by python's garbage collector. Python's garbage collector runs during program execution and is triggered when an object's reference count reaches zero. An object's reference count changes as the number of aliases that point to it changes.
+
+The "__del__(self)" function can also be applied to produce any work on object destruction.
+
+```python
+def __del__(self):
+      class_name = self.__class__.__name__
+      print class_name, "destroyed"
+```
+
+
+
+
+
 
 
 
