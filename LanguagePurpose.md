@@ -1,0 +1,5 @@
+# Language Purpose
+## C#
+Created in 2000, C# was originally intended as a “simple, modern, general purpose object-oriented language.” C# was Microsoft’s response to the release of Java, and originally looked very similar to Java. It was heavily object-oriented, until the 2.0 version’s release in 2005, which expanded the features to include generics, anonymous methods, and even different iterators, mirroring Java’s recent release of an enhanced for-loop in 2004. In 2007, C# established the LINQ (Language-integrated query), which provided a method to perform operations on collections of data in a much more logical way, and evolved the language in a completely divergent path compared to Java. In recent releases, the language has adapted to incorporate multiple paradigms, such as pattern-matching within the functional programming paradigm.
+## Python
+Originally developed around 1991 by Guido van Rossum, Python was intended to be simple and have high readability, as well as minimalism. It was heavily influenced by Lisp, as well as a language called ABC. The initial release contained exception handling, and was object-oriented primarily. 
