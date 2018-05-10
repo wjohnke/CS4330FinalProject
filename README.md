@@ -7,17 +7,18 @@ Team member: William Johnke
 
 
 Links:
-[LanguagePurpose.md](Language purpose/genesis)
 
-[UniqueFeatures.md](Unique features of the language)
+[Language purpose/genesis](Languages.md)
 
-[Namespaces.md](Namespaces)
+[Unique features of the language](UniqueFeatures.md)
 
-[Types.md](Types)
+[Namespaces](Namespaces.md)
 
-[Classes.md](Classes & Instance reference name in data type (class))
+[Types](Types.md)
 
-[Properties.md](Properties)
+[Classes & Instance reference name in data type (class)](Classes.md)
+
+[Properties](Properties.md)
 
 Interfaces / protocols
 
