@@ -9,9 +9,28 @@ C#: LINQ is a heavy unique feature that C# implemented initially. Interoperabili
 Python: The importance of indentation and significant whitespace was unique to python, and assisted in enforcing readability in developers code. Python also includes Generator expressions, which are a different version of list expressions, and enable the run-time generation of iterable structures without consuming as much data.
 
 # Name spaces
-C#: Through the use of the “using” keyword in C#, external namespaces are allowed to be implemented and differentiated from local variables. Namespaces can be nested as desired, to allow for proper closures, and it also enables a hierarchical system to be 
-Python: Namespaces are implemented as dictionaries, or key-value pairs. The name is used as a key, and an object for the namespace is generated as a value. Every single module, class, function, etc. contains its own namespace, as well as a global namespace. This makes it easy to import other Python projects, even if there are identical names, as each name has an identifier for its scope, and imported modules contain the global namespace scope, which will not have a collision with any local variables.
+C#: Through the use of the “using” keyword in C#, external namespaces are allowed to be implemented and differentiated from local variables. 
+```
+using System;
+```
+Namespaces can be nested as desired, to allow for proper closures, and it also enables a hierarchical system to be generated.
+```
+namespace SampleNamespace
+{
+    class SampleClass
+    {
+        public void SampleMethod()
+        {
+            System.Console.WriteLine(
+              "SampleMethod inside SampleNamespace");
+        }
+    }
+}
+```
 
+
+
+Python: Namespaces are implemented as dictionaries, or key-value pairs. The name is used as a key, and an object for the namespace is generated as a value. Every single module, class, function, etc. contains its own namespace, as well as a global namespace. This makes it easy to import other Python projects, even if there are identical names, as each name has an identifier for its scope, and imported modules contain the global namespace scope, which will not have a collision with any local variables.
 
 ``` // Namespace Declaration
 using System;
