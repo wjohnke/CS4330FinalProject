@@ -20,7 +20,7 @@ Links:
 
 [Properties](Properties.md)
 
-Interfaces / protocols
+[Interfaces / protocols](Interfaces.md)
 
 Inheritance / extension
 
