@@ -22,7 +22,7 @@ Links:
 
 [Interfaces / protocols](Interfaces.md)
 
-Inheritance / extension
+[Inheritance / extension](Inheritance.md)
 
 Reflection
 
